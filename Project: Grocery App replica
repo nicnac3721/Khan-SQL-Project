@@ -1,0 +1,19 @@
+CREATE TABLE walmart_pickup (name TEXT, groceries TEXT, location TEXT, price NUMERIC);
+
+INSERT INTO walmart_pickup VALUES ("Nicole", "Apples, peaches, bananas, grapes", "Frisco", 40);
+INSERT INTO walmart_pickup VALUES ("Isai", "Yogurt, Crackers, Chips, Lasagna", "Plano", 34);
+INSERT INTO walmart_pickup VALUES ("Edlin", "Ding Dongs, Cream, Butter, Chicken", "Fresno", 20);
+INSERT INTO walmart_pickup VALUES ("Mom", "Bread, Bagels, Cheese, Ham", "Lake City", 59);
+INSERT INTO walmart_pickup VALUES ("Heather", "Peanut Butter, Granola Bars, Candy", "Lake City", 20);
+
+SELECT * FROM walmart_pickup;
+
+UPDATE walmart_pickup SET groceries = "Yogurt, Crackers, Chips, Lasagna, Tajin" WHERE name = "Isai";
+
+SELECT * FROM walmart_pickup;
+
+DELETE FROM walmart_pickup WHERE name = "Nicole";
+
+SELECT * FROM walmart_pickup;
+
+
