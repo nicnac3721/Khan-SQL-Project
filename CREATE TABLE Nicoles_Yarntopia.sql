@@ -1,0 +1,20 @@
+CREATE TABLE Nicoles_Yarntopia (id INTEGER, item TEXT, time_spent INTEGER, online TEXT, quantity INTEGER, price NUMERIC);
+INSERT INTO Nicoles_Yarntopia VALUES (1, "Duck", 30, "yes", 4, 16);
+INSERT INTO Nicoles_Yarntopia VALUES (2, "Chicks", 20, "no", 5, 10);
+INSERT INTO Nicoles_Yarntopia VALUES (3, "Axolotl", 25, "yes", 6, 14);
+INSERT INTO Nicoles_Yarntopia VALUES (4, "Whales", 15, "yes", 8, 10);
+INSERT INTO Nicoles_Yarntopia VALUES (5, "Gummy Bears", 15, "no", 6, 5);
+INSERT INTO Nicoles_Yarntopia VALUES (6, "Long Neck Dinos", 45, "no", 2, 20);
+INSERT INTO Nicoles_Yarntopia VALUES (7, "Hippos", 45, "yes", 2, 20);
+INSERT INTO Nicoles_Yarntopia VALUES (8, "Eagles", 30, "no", 3, 16);
+INSERT INTO Nicoles_Yarntopia VALUES (9, "Triceratops", 25, "no", 4, 12);
+INSERT INTO Nicoles_Yarntopia VALUES (10, "Chickens", 30, "yes", 6, 12);
+INSERT INTO Nicoles_Yarntopia VALUES (11, "Snails", 20,"yes", 2, 10);
+INSERT INTO Nicoles_Yarntopia VALUES (12, "Turtles", 30, "yes", 5, 20);
+INSERT INTO Nicoles_Yarntopia VALUES (13, "Jellyfish", 40, "yes", 2, 20);
+INSERT INTO Nicoles_Yarntopia VALUES (14, "Frogs", 20, "yes", 6, 10);
+INSERT INTO Nicoles_Yarntopia VALUES (15, "Bunnies", 60, "yes", 2, 42);
+
+SELECT * FROM Nicoles_Yarntopia;
+SELECT SUM (quantity) FROM Nicoles_Yarntopia;
+SELECT * FROM Nicoles_Yarntopia ORDER BY price;
