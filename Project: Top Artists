@@ -1,0 +1,26 @@
+CREATE TABLE singers (id INTEGER PRIMARY KEY, name TEXT);
+INSERT INTO singers VALUES (1, "Elton John");
+INSERT INTO singers VALUES (2, "Billy Joel");
+INSERT INTO singers VALUES (3, "Adele");
+INSERT INTO singers VALUES (4, "Megan Trainer");
+INSERT INTO singers VALUES (5, "Justin Beiber");
+
+SELECT * FROM singers;
+
+CREATE TABLE home (id INTEGER PRIMARY KEY, home TEXT);
+INSERT INTO home VALUES (1, "USA");
+INSERT INTO home VALUES (2, "USA");
+INSERT INTO home VALUES (3, "Great Britain");
+INSERT INTO home VALUES (4, "USA");
+INSERT INTO home VALUES (5, "Canada");
+
+CREATE TABLE songs (id INTEGER PRIMARY KEY, songs TEXT);
+INSERT INTO songs VALUES (1, "Tiny Dancer");
+INSERT INTO songs VALUES (2, "Piano Man");
+INSERT INTO songs VALUES (3, "Easy on Me");
+INSERT INTO songs VALUES (4, "All About That Bass");
+INSERT INTO songs VALUES (5, "Baby");
+
+SELECT singers.name, songs.songs FROM singers LEFT OUTER JOIN songs ON singers.id = songs.id;
+
+SELECT singers.name, home.home FROM singers LEFT OUTER JOIN home ON singers.id= home.id;
